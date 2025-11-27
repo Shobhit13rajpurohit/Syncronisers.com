@@ -385,7 +385,7 @@ ul, ol {
 .menu-item {
 	position: relative;
 	z-index: 9;
-	background-color: #000;
+	background-color: #fff;
 }
 .menu-item .logo {
 	padding: 25px 0;
@@ -418,7 +418,7 @@ ul, ol {
 }
 .menu-item .nav-menu .mainmenu li a {
 	font-size: 16px;
-	color: #fff;
+	color: #000;
 	margin-right: 42px;
 	font-weight: 500;
 	display: inline-block;
@@ -866,7 +866,7 @@ ul, ol {
 -----------------------*/
 
 .footer-section {
-	background: #222736;
+	background: #ffffff;
 }
 .footer-section .footer-text {
 	padding: 80px 0 30px;
@@ -881,7 +881,7 @@ ul, ol {
 	display: inline-block;
 }
 .footer-section .footer-text .ft-about p {
-	color: #aaaab3;
+	color: #000;
 	margin-bottom: 20px;
 }
 .footer-section .footer-text .ft-about .fa-social a {
@@ -891,7 +891,7 @@ ul, ol {
 	font-size: 16px;
 	line-height: 40px;
 	text-align: center;
-	color: #ffffff;
+	color: #000;
 	border: 1px solid #5A4D48;
 	border-radius: 50%;
 	-webkit-transition: all 0.3s;
@@ -917,7 +917,7 @@ ul, ol {
 }
 .footer-section .footer-text .ft-contact ul li {
 	font-size: 16px;
-	color: #aaaab3;
+	color: #000;
 	line-height: 32px;
 	list-style: none;
 }
@@ -931,7 +931,7 @@ ul, ol {
 	margin-bottom: 20px;
 }
 .footer-section .footer-text .ft-newslatter p {
-	color: #aaaab3;
+	color: #000;
 	margin-bottom: 20px;
 }
 .footer-section .footer-text .ft-newslatter .fn-form {
@@ -973,11 +973,11 @@ ul, ol {
 }
 .footer-section .copyright-option ul li a {
 	font-size: 16px;
-	color: #aaaab3;
+	color: #000;
 }
 .footer-section .copyright-option .co-text {
 	font-size: 16px;
-	color: #707079;
+	color: #000;
 	text-align: right;
 }
 /* --------------------------------- Other Pages Styles ----------------------------------- */
@@ -2304,6 +2304,14 @@ ul, ol {
 	}
 	.hp-room-item {
 		margin-bottom: 10px;
+	}
+}
+@media only screen and (max-width: 575px) {
+	.footer-section .footer-text .row .col-lg-4,
+	.footer-section .footer-text .row .col-lg-3 {
+		-ms-flex: 0 0 100%;
+		flex: 0 0 100%;
+		max-width: 100%;
 	}
 }
 /* Small Mobile: 320px */
