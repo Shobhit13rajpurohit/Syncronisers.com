@@ -75,4 +75,28 @@
         navText: ["<i class='arrow_left'></i>", "<i class='arrow_right'></i>"]
     });
 
+    /*------------------
+        Smart Sticky Header
+    --------------------*/
+    var lastScrollTop = 0;
+    $(window).scroll(function () {
+        var currentScrollTop = $(this).scrollTop();
+
+        if (currentScrollTop > 100) {
+            $('.header-section').addClass('header-sticky');
+
+            if (currentScrollTop > lastScrollTop) {
+                // Scrolling Down
+                $('.header-section').removeClass('header-visible').addClass('header-hidden');
+            } else {
+                // Scrolling Up
+                $('.header-section').removeClass('header-hidden').addClass('header-visible');
+            }
+        } else {
+            $('.header-section').removeClass('header-sticky header-hidden header-visible');
+        }
+
+        lastScrollTop = currentScrollTop;
+    });
+
 })(jQuery);
